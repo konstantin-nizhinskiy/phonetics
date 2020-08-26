@@ -2,7 +2,6 @@ package phonetics
 
 import (
 	"errors"
-	"log"
 	"regexp"
 	"strings"
 )
@@ -22,7 +21,6 @@ func EncodeMetaphone(word string, lang ...string) string {
 			}
 		}
 	}
-	log.Println(_lang, word)
 	switch _lang {
 	case "ua", "ru":
 		return encodeMetaphoneRu(word)
